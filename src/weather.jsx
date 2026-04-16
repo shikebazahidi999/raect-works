@@ -4,7 +4,8 @@ import { useEffect, useState } from "react";
 
 export default function Weather(){
     const [info,setinfo] = useState();
-    const [cityName,setCityname] = useState("Ghazni")
+    const [cityName,setCityname] = useState("Ghazni");
+    const [clickedButton,setclickbutton] = useState(false)
      useEffect(()=>{
         async function infomation(){
           const srcinfo = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=684418efa9274f3ad6491868b0271123`);
