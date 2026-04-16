@@ -1,10 +1,32 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './App.jsx'
+
+
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import MainPage from './componantes/Mainpage.jsx'
+import About from './about.jsx'
+import Images from './images.jsx'
+import Allinfo from './AllInfo.jsx'
+import People from './person.jsx'
+import Costomars from './costomars.jsx'
+import EachPerson from './eachperson.jsx'
+import Weather from './weather.jsx'
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
+  
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<MainPage/>}/>
+      <Route path='/about' element={<About/>}/>
+      <Route path='/images' element={<Images/>}/>
+      <Route path='/allinfo' element={<Allinfo/>}/>
+      <Route path='/allinfo/:id' element={<People/>}/>
+      <Route path='/costomars' element={<Costomars/>}/>
+      <Route path='/costomars/:id' element={<EachPerson/>}/>
+      <Route path='/weather' element={<Weather/>}/>
+
+    </Routes>
+    </BrowserRouter>
+  
 )
