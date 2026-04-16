@@ -14,7 +14,7 @@ export default function Weather(){
         infomation()
         
         
-     },[]);
+     },[cityName]);
     
      console.log(info)
      if(!info){
@@ -35,13 +35,13 @@ export default function Weather(){
         <Navbar/>
         <div className="h-screen w-screen flex flex-col items-center justify-center p-64">
           <div className="w-full flex flex-row space-y-2">
-            <input className="border-2 border-blue-400 w-full" type="text"  />
-            <button className="border-2 border-blue-400 h-fit w-fit hover:bg-blue-400 hover:text-white">Search</button>
+            <input onChange={(effect)=> setCityname(effect.target.value)} className="border-2 border-blue-400 w-full" type="text" value={cityName} />
+            <button onClick={clickMe} className="border-2 border-blue-400 h-fit w-fit hover:bg-blue-400 hover:text-white">Search</button>
           </div>
         <div className=" p-10 h-fit w-full border-x-2 border-blue-400 flex flex-col ">
             <div className="flex justify-center ">
             <h1 className=" text-3xl h-fit w-fit font-bold  text-transparent bg-linear-90 from-blue-500 via-blue-300 to-blue-500 bg-clip-text  ">
-                Ghazni Citie's Weather 
+                {cityName} Citie's Weather 
             </h1>
             <hr />
             </div>
