@@ -5,17 +5,21 @@ import { useEffect, useState } from "react";
 export default function Weather(){
     const [info,setinfo] = useState();
     const [cityName,setCityname] = useState("Ghazni");
-    const [clickedButton,setclickbutton] = useState(false)
+    const [clickedButton,setclickbutton] = useState(false);
+    function clickMe(){
+      setclickbutton(!clickedButton);
+    }
      useEffect(()=>{
         async function infomation(){
           const srcinfo = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=684418efa9274f3ad6491868b0271123`);
           const getinfo = await srcinfo.json(); 
           setinfo(getinfo); 
         }
-        infomation()
+        infomation();
         
         
-     },[cityName]);
+     },[clickedButton]);
+     
     
      console.log(info)
      if(!info){
@@ -36,7 +40,7 @@ export default function Weather(){
         <Navbar/>
         <div className="h-screen w-screen flex flex-col items-center justify-center p-64">
           <div className="w-full flex flex-row space-y-2">
-            <input onChange={(effect)=> setCityname(effect.target.value)} className="border-2 border-blue-400 w-full" type="text" value={cityName} />
+            <input  value={cityName} onChange={(effect)=> setCityname(effect.target.value)} className="border-2 border-blue-400 w-full" type="text" />
             <button onClick={clickMe} className="border-2 border-blue-400 h-fit w-fit hover:bg-blue-400 hover:text-white">Search</button>
           </div>
         <div className=" p-10 h-fit w-full border-x-2 border-blue-400 flex flex-col ">
