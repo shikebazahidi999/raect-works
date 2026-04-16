@@ -21,7 +21,7 @@ export default function Weather(){
      },[clickedButton]);
      
     
-     console.log(info)
+     console.log(info);
      if(!info){
         return(
         <h1 className="text-6xl text-green-500">Loading...</h1>)
