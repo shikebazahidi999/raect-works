@@ -80,7 +80,7 @@ export default function Weather(){
                 <h1 className="text-xl">{sunset}</h1>
               </div>
 <div>
-  <h1>hell</h1>
+  <h1>hello</h1>
 
 </div>
               
