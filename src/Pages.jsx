@@ -15,7 +15,7 @@ export default function Pages(){
           const Datas = await Data.json();
           setvalue(Datas);
            if(qimat.trim().length!== 0){
-        const qimats =setqimat( value.filter((v)=> v.title.includes(qimat)))}
+        const qimats =setvalue( value.filter((v)=> v.title.includes(qimat)))}
         }
         
         posts()
