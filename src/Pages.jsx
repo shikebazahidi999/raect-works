@@ -5,7 +5,7 @@ import { Search } from "lucide-react";
 export default function Pages(){
    const [qimat, setqimat] = useState("")
     const [value, setvalue] = useState([]);
-   const [clickedBtn, setclickedbtn]= useState(false)
+   const [clickedBtn, setclickedbtn]= useState(false);
      function ClickButton(){
        setclickedbtn(!clickedBtn);
     }
