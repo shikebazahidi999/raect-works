@@ -4,6 +4,7 @@ import { Search } from "lucide-react";
 
 export default function Pages(){
     const [value, setvalue] = useState([]);
+   const [clickedBtn, setclickedbtn] useState(false)
     useEffect(()=>{
        async function posts(){
           const Data = await fetch("https://jsonplaceholder.typicode.com/posts");
@@ -24,8 +25,8 @@ export default function Pages(){
         <Navbar/>
         <div className="bg-linear-90 from-stone-400 via-stone-300 to-stone-500 h-full w-full  ">
             <div className=" mt-20 p-7 w-full flex flex-row ">
-                <input type="text" placeholder="Search a post by the title name" className="w-full h-10 border-2 border-stone-400" />
-                <button><Search/></button>
+                <input value={value} onChange={(effect)=> effect.target.value} type="text" placeholder="Search a post by the title name" className="w-full h-10 border-2 border-r-0 border-stone-400 focus:outline-stone-500" />
+                <button onClick={ClickButton} className=" text-stone-800 border-2 border-l-0 border-stone-400 px-4 hover:bg-stone-500 hover:text-stone-200  hover:border-l-2"><Search/></button>
             </div>
             <div className="grid grid-cols-2 gap-5 p-5 " >
                 {
