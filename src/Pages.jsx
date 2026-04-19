@@ -7,7 +7,7 @@ export default function Pages(){
     const [value, setvalue] = useState([]);
    const [clickedBtn, setclickedbtn]= useState(false)
      function ClickButton(){
-       setclickedbtn(!clickedBtn)
+       setclickedbtn(!clickedBtn);
     }
     useEffect(()=>{
        async function posts(){
