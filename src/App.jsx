@@ -26,7 +26,7 @@ export default function Navbar(){
       text:"costomars"
     },
     {
-       href:"/pages",
+       href:"/Pages",
        text:"Pages"
     },
    {
