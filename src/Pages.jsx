@@ -6,17 +6,20 @@ export default function Pages(){
    const [qimat, setqimat] = useState("")
     const [value, setvalue] = useState([]);
    const [clickedBtn, setclickedbtn]= useState(false)
+     function ClickButton(){
+       setclickedbtn(!clickedBtn)
+    }
     useEffect(()=>{
        async function posts(){
           const Data = await fetch("https://jsonplaceholder.typicode.com/posts");
           const Datas = await Data.json();
           setvalue(Datas);
-           if(qimat.trim().length> 0){
+           if(qimat.trim().length!== 0){
         const qimats =setqimat( value.filter((v)=> v.title.includes(qimat)))}
         }
         
         posts()
-    },[]);
+    },[clickedBtn]);
   
     if(value.length===0){
         return(
@@ -25,9 +28,7 @@ export default function Pages(){
             </div>
         )
     };
-      function ClickButton(){
-       
-    }
+    
     return(
         <>
         <Navbar/>
