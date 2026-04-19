@@ -4,7 +4,7 @@ import { Search } from "lucide-react";
 
 export default function Pages(){
     const [value, setvalue] = useState([]);
-   const [clickedBtn, setclickedbtn] useState(false)
+   const [clickedBtn, setclickedbtn]= useState(false)
     useEffect(()=>{
        async function posts(){
           const Data = await fetch("https://jsonplaceholder.typicode.com/posts");
