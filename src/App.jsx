@@ -1,11 +1,11 @@
-
+import { createContext } from "react";
 import {  useEffect} from "react";
 import { Link,  } from "react-router-dom";
 import BgChanger from "./bgChanger";
 
 
 
-
+export const NameContext = createContext();
 export default function Navbar(){
  
   const useeffect =useEffect(()=>{
