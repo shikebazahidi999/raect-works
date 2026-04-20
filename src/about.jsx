@@ -1,8 +1,9 @@
 import { useContext } from "react";
 import Navbar from "./App";
+import { NameContext } from "./componantes/Mainpage";
 
 export default function About(){
-   const info= useContext(nameContext)
+   const info = useContext(NameContext)
     return(
         
         

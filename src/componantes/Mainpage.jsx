@@ -3,21 +3,21 @@ import Navbar from "../App";
 
 import About from "../about";
 
-
+export const NameContext = createContext();
 export default function MainPage(){
    
     
      let [value,setvalue] =useState("");
   
-     const nameContext = createContext();
+     
     return(
        
         <>
      
         <Navbar/>
-  <nameContext.provideer value={value}>
-    <About/>
-</nameContext.provideer>
+  <NameContext.Provider value={value}>
+    
+</NameContext.Provider>
         <div className="h1div flex flex-col gap-4">
             <input className=" border " value={value} onChange={(event)=> setvalue(event.target.value)} type="text" />
             <h1 className=" border border-black p-2 font-serif bg-linear-90 from-green-900 via-green-300 to-green-900 text-transparent bg-clip-text ">{value}</h1>
