@@ -1,5 +1,5 @@
 import { createContext, useState, } from "react"
-import Navbar from "../App"
+import Navbar from "../App";
 
 import About from "../about";
 
