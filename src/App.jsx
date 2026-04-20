@@ -42,6 +42,9 @@ export default function Navbar(){
 
   return(
     <>
+      <NameContext.Provider value={value}>
+    
+</NameContext.Provider>
  
     <div className="navDiv">
       <h1 ><span className="sh">SH</span> resturant</h1>
