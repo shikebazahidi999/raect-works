@@ -10,7 +10,7 @@ export default function MainPage(){
      let [value,setvalue] =useState("");
      function click (){
         
-        const infoContext = createContext();
+        const nameContext = createContext();
 
      }
     return(

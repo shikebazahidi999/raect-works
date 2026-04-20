@@ -2,7 +2,7 @@ import { useContext } from "react";
 import Navbar from "./App";
 
 export default function About(){
-   const info= useContext(infoContext)
+   const info= useContext(nameContext)
     return(
         
         
