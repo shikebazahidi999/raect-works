@@ -1,9 +1,9 @@
-import { createContext, useState, } from "react";
+import {  useState, } from "react";
 import Navbar from "../App";
 
 import About from "../about";
 
-export const NameContext = createContext();
+
 export default function MainPage(){
    
     
