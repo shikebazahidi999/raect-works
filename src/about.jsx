@@ -10,7 +10,7 @@ export default function About(){
         <>
         <Navbar/>
         <div className="border border-dashed p-3 text-black w-96 mt-52 ">
-            <h1>information</h1>
+            <h1>information o</h1>
             <p>{info}</p>
         </div>
         </>
