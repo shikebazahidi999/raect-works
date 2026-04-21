@@ -4,7 +4,7 @@ import './index.css'
 
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import MainPage from './componantes/Mainpage.jsx'
+import {MainPage }from './App.jsx'
 import About from './about.jsx'
 import Images from './images.jsx'
 import Allinfo from './AllInfo.jsx'
