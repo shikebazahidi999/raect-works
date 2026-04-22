@@ -1,4 +1,4 @@
-import { useContext } from "react"
+import { useContext } from "react";
 import { StudentsContext } from "./about";
 
 export default function Students(){
