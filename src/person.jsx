@@ -25,5 +25,5 @@ duration-300 hover:shadow-xl hover:shadow-pink-50 hover:blur-[2px] " src= {info.
     </div>       
  </div> 
         </>
-    )
+    );
 }
