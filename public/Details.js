@@ -138,5 +138,5 @@ export const Taechers = [
     age:28,
     gender:"Female"
 
-    }
+    },
 ]
