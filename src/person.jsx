@@ -5,7 +5,7 @@ export default function People(){
 
 
    const { id } = useParams();
-    const info = employs.find((items)=>items.id ==Number(id))
+    const info = employs.find((items)=>items.id ==Number(id));
     return(
         <>
         <Navbar/>
