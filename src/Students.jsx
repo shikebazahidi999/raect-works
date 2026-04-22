@@ -1,5 +1,5 @@
 import { useContext } from "react"
-import { StudentsContext } from "./about"
+import { StudentsContext } from "./about";
 
 export default function Students(){
    const infos = useContext(StudentsContext);
