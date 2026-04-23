@@ -139,4 +139,4 @@ export const Taechers = [
     gender:"Female"
 
     },
-]
+];
