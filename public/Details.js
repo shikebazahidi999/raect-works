@@ -10,7 +10,7 @@
 
     },
     {
-      name:"sam"
+      name:"sami"
     }
     ,
    {
