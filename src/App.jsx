@@ -61,7 +61,7 @@ export  function MainPage(){
   let getvalue = useRef();
 
   function click(){
-setvalue(getvalue.current.value)
+setvalue(getvalue.current.value);
   }
    return(
         <>
