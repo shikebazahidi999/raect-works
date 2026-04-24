@@ -22,7 +22,7 @@ export default function Navbar(){
     },
     {
        href:"/Pages",
-       text:"Pages"
+       text:"Pages",
     },
    {
    href:"/allinfo",
