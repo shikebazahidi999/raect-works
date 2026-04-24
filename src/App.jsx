@@ -35,7 +35,11 @@ export default function Navbar(){
    {
    href:"/",
    text:"Main Page"
-   } 
+   },
+   {
+   href:"/",
+   text:"Main Page"
+   },
  
   ]; return(
     <><div className="navDiv">
