@@ -30,7 +30,7 @@ export default function Navbar(){
    } ,
    {
    href:"/weather",
-   text:"Weather page"
+   text:"Weather page",
    }, 
    {
    href:"/",
