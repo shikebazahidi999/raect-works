@@ -9,10 +9,7 @@
     gender:"male"
 
     },
-    {
-      name:"sami"
-    }
-    ,
+   
    {
     id:2,
     name:"Zahra",
