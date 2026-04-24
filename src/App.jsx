@@ -10,7 +10,7 @@ export default function Navbar(){
   const routes = [
     {
       href:"/about",
-      text:"About"
+      text:"About",
     },
     {
     href:"/images",
