@@ -34,7 +34,7 @@ export default function Navbar(){
    }, 
    {
    href:"/",
-   text:"Main Page"
+   text:"Main Page",
    },
    
  
