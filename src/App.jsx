@@ -26,7 +26,7 @@ export default function Navbar(){
     },
    {
    href:"/allinfo",
-   text:"AllInfo"
+   text:"AllInfo",
    } ,
    {
    href:"/weather",
