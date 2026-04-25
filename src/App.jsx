@@ -76,7 +76,7 @@ setvalue(getvalue.current.value);
             <button onClick={click} className="border font-bold hover:bg-gray-400 hover:text-white transition-all duration-150 hover:rounded-md"
              >hide text</button>
         </div>
-        <h1>hello e</h1>
+        <h1>hello ev</h1>
         
         </>)}
 
