@@ -54,6 +54,7 @@ export default function Navbar(){
 }
 import {  useState, } from "react";
 import About from "./about";
+import Radiucer from "./useraduce";
  export const NameContext = createContext();
 export  function MainPage(){
 
@@ -69,14 +70,15 @@ setvalue(getvalue.current.value);
         <NameContext.Provider value={value}>
           <About/>
           </NameContext.Provider>
-           
-<div className="h1div flex flex-col gap-4">
+   <div className="flex flex-row items-center justify-center p-20 h-fit bg-linear-90 from-red-200 via-sky-200 to-lime-200 ">        
+{/* <div className="h1div flex flex-col gap-4">
             <input ref={getvalue} className=" border " value={value} onChange={(event)=> setvalue(event.target.value)} type="text" />
             <h1 className=" border border-black p-2 font-serif bg-linear-90 from-green-900 via-green-300 to-green-900 text-transparent bg-clip-text ">{value}</h1>
             <button onClick={click} className="border font-bold hover:bg-gray-400 hover:text-white transition-all duration-150 hover:rounded-md"
              >hide text</button>
+        </div> */}
+        <Radiucer/>
         </div>
-        <h1>hello everyone today i'm,</h1>
         
         </>)}
 
