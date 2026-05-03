@@ -11,6 +11,9 @@ export default function Radiucer(){
             )
             showbtn()
         }
+        else if(func.type==="reset"){
+            
+        }
         else{
             return(
                 state-1
