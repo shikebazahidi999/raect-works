@@ -10,7 +10,7 @@ export default function Students(){
             <h1 className=" text-center m-5 text-4xl font-bold bg-linear-90 from-red-400 via-sky-400 to-lime-400 text-transparent bg-clip-text w-fit">Students</h1>
         <div className=" grid grid-cols-2 h-fit w-fit gap-3 ">
           {infos.employ.map((item)=>(
-            <div className=" hover:shadow-2xl hover:shadow-lime-400 h-fit w-75 p-3 bg-linear-90 from-red-200 via-sky-200 to-lime-200 rounded-2xl" key={item.id}>
+            <div  className=" hover:shadow-2xl hover:shadow-lime-400 h-fit w-75 p-3 bg-linear-90 from-red-200 via-sky-200 to-lime-200 rounded-2xl" key={item.id}>
                 <h1 className="font-black"> Id: {item.id}</h1>
                 <h1 className="text-2xl"> Name:{item.name}</h1>
                 <h1>Father's Name:{item.fatherName}</h1>
