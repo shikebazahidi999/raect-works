@@ -6,7 +6,7 @@ export default function Pages(){
    const [qimat, setqimat] = useState("")
     const [value, setvalue] = useState([]);
    const [clickedBtn, setclickedbtn]= useState(false);
-   const [pending,setpending]= useTransition(null);
+   const [pending,startpending]= useTransition(null);
      function ClickButton(){
        setclickedbtn(!clickedBtn);
     }
@@ -14,9 +14,10 @@ export default function Pages(){
        async function posts(){
           const Data = await fetch("https://jsonplaceholder.typicode.com/posts");
           const Datas = await Data.json();
-          setpending(()=>{
+          startpending(()=>{
              setvalue(Datas);
-          })
+          });
+          setvalue(Datas);
          
            if(qimat.trim().length!== 0){
         const qimats =setvalue( value.filter((v)=> v.title.includes(qimat)))};
@@ -25,13 +26,13 @@ export default function Pages(){
         posts()
     },[clickedBtn]);
   
-    if(value.length===0){
+    if(!pending){
         return(
             <div className="h-full w-full flex items-center justify-center ">
-            <h1 className=" text-3xl text-center ">Wait For It...</h1>
+            <h1 className=" text-6xl text-center z-50 text-shadow-red-500 ">Wait For It...</h1>
             </div>
         )
-    };
+    }else{
     
     return(
         <>
@@ -56,4 +57,4 @@ export default function Pages(){
         </>
 
     )
-}
+}}
