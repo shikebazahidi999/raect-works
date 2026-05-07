@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useTransition } from "react";
 import Navbar from "./App";
 import { Search } from "lucide-react";
 
@@ -6,6 +6,7 @@ export default function Pages(){
    const [qimat, setqimat] = useState("")
     const [value, setvalue] = useState([]);
    const [clickedBtn, setclickedbtn]= useState(false);
+   const [pending,setpending]= useTransition(null)
      function ClickButton(){
        setclickedbtn(!clickedBtn);
     }
