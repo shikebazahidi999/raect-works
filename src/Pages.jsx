@@ -6,7 +6,7 @@ export default function Pages(){
    const [qimat, setqimat] = useState("")
     const [value, setvalue] = useState([]);
    const [clickedBtn, setclickedbtn]= useState(false);
-   const [pending,setpending]= useTransition(null)
+   const [pending,setpending]= useTransition(null);
      function ClickButton(){
        setclickedbtn(!clickedBtn);
     }
