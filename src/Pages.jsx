@@ -14,7 +14,10 @@ export default function Pages(){
        async function posts(){
           const Data = await fetch("https://jsonplaceholder.typicode.com/posts");
           const Datas = await Data.json();
-          setvalue(Datas);
+          setpending(()=>{
+             setvalue(Datas);
+          })
+         
            if(qimat.trim().length!== 0){
         const qimats =setvalue( value.filter((v)=> v.title.includes(qimat)))};
         }
