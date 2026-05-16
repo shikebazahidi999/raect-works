@@ -13,6 +13,8 @@ import Costomars from './costomars.jsx'
 import EachPerson from './eachperson.jsx'
 import Weather from './weather.jsx'
 import Pages from './Pages.jsx'
+import Informations from './componantes/informations.jsx'
+import Moreinfo from './componantes/moreinfo.jsx'
 
 createRoot(document.getElementById('root')).render(
   
@@ -27,6 +29,8 @@ createRoot(document.getElementById('root')).render(
       <Route path='/costomars/:id' element={<EachPerson/>}/>
       <Route path='/weather' element={<Weather/>}/>
       <Route path='/Pages' element={<Pages/>}/>
+      <Route path='/informations' element={<Informations/>}/>
+      <Route path='/informations/:id' element={<Moreinfo/>}/>
 
     </Routes>
     </BrowserRouter>
