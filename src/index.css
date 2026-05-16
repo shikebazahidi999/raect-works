@@ -3,7 +3,7 @@
 .navDiv{
   width: 100%;
   height: fit-content;
-  background-color: black;
+ 
   color: white;
   display: flex;
   flex-direction: row;
@@ -51,4 +51,7 @@
   margin-top:150px ;
   color: black;
 
+}
+.cursive{
+  font-family: cursive;
 }
