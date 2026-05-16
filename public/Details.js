@@ -6,7 +6,8 @@
     LastName:"Mohammadi",
     image: "./picture2.jpg",
     age:18,
-    gender:"male"
+    gender:"male",
+    email:"ali@gmail.com"
 
     },
    
@@ -17,7 +18,8 @@
     LastName:"Ahmadi",
     image: "./picture3.jpg",
     age:34,
-    gender:"female"
+    gender:"female",
+    email:"zahra@gmail.com"
 
     }
     ,
@@ -28,7 +30,8 @@
     LastName:"Amiri",
     image: "./picture4.jpg",
     age:28,
-    gender:"female"
+    gender:"female",
+    email:"amir@gmail.com"
 
     }
     ,
@@ -39,7 +42,8 @@
     LastName:"Zahedi",
     image: "./picture5.jpg",
     age:19,
-    gender:"female"
+    gender:"female",
+    email:"samira@gmail.com"
 
     }
     ,
@@ -50,7 +54,8 @@
     LastName:"Zahedi",
     image: "./picture6.jpg",
     age:25,
-    gender:"female"
+    gender:"female",
+    email:"shikeba@gmail.com"
 
     },
    {
@@ -58,9 +63,10 @@
     name:"Zamira",
     fatherName:"Mohammad Baqir",
     LastName:"Zahedi",
-    image: "./picture6.jpg",
+    image: "./picture7.jpg",
     age:25,
-    gender:"female"
+    gender:"female",
+    email:"zamira@gmail.com"
 
     },
    {
@@ -68,9 +74,10 @@
     name:"Maryam",
     fatherName:"Asadullah",
     LastName:"Zahedi",
-    image: "./picture6.jpg",
+    image: "./picture8.jpg",
     age:25,
-    gender:"female"
+    gender:"female",
+    email:"maryam@gmail.com"
 
     },
    {
@@ -78,9 +85,10 @@
     name:"Noor",
     fatherName:"Asadullah",
     LastName:"Zahedi",
-    image: "./picture6.jpg",
+    image: "./picture9.jpg",
     age:25,
-    gender:"male"
+    gender:"male",
+    email:"noor@gmail.com"
 
     },
    {
@@ -88,9 +96,10 @@
     name:"Masoma",
     fatherName:"Asadullah",
     LastName:"Zahedi",
-    image: "./picture6.jpg",
+    image: "./picture10.jpg",
     age:25,
-    gender:"female"
+    gender:"female",
+    email:"masoma@gmail.com"
 
     },
 ];
