@@ -35,14 +35,21 @@ export default function Navbar(){
    {
    href:"/",
    text:"Main Page",
-   },
+   },{
+   href:"/informations",
+   text:"Informations",
+   }
+   ,{
+   href:"/moreinfo",
+   text:"More infos",
+   }
    
  
   ]; return(
-    <><div className="navDiv">
+    <><div className="navDiv bg-linear-60 from-purple-300 via-purple-600 to-purple-950">
       <h1 ><span className="sh">SH</span> resturant</h1>
 
-        <ul className=" flex flex-row gap-3 bg-black h-fit">
+        <ul className=" flex flex-row gap-3  h-fit">
           {routes.map((items)=>(
             <li className="ul" key={items.href}>
             <Link 
@@ -58,6 +65,8 @@ import {  useState, } from "react";
 import About from "./about";
 import Radiucer from "./useraduce";
 import Textcomponent from "./text";
+import Informations from "./componantes/informations";
+import Moreinfo from "./componantes/moreinfo";
  export const NameContext = createContext();
 export const usecontexts = createContext();
 export  function MainPage(){
@@ -84,6 +93,8 @@ setvalue(getvalue.current.value);
         <NameContext.Provider value={{value:values,setvalues:setvalues}}>
           <About/>
           </NameContext.Provider>
+          <Informations/>
+          <Moreinfo/>
         
    <div className="flex flex-row items-center justify-center p-20 h-fit bg-linear-90 from-red-200 via-sky-200 to-lime-200 ">        
 {/* <div className="h1div flex flex-col gap-4">
