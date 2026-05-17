@@ -78,7 +78,7 @@ export  function MainPage(){
     values
      )
  }
- let  [values, setvalues] =useReducer(textfunction,text)
+ let  [values, setvalues] =useReducer(textfunction,text);
   let getvalue = useRef();
 
   function click(){
