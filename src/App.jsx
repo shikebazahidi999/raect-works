@@ -42,7 +42,7 @@ export default function Navbar(){
    ,{
    href:"/moreinfo",
    text:"More infos",
-   }
+   },
    
  
   ]; return(
