@@ -11,7 +11,7 @@ export default function Moreinfo(){
     let [checkpasswors,setcheckpassword] =useState(false);
     let hidDiv = useRef(null)
     let errorh1= useRef(null)
-        const info = employs.find((items)=>items.id ==Number(id));
+        const info = employs.find((items)=>items.id ==id)|| null ;
         function Loging(){
             setemail("");
             setpasword("")
@@ -25,6 +25,9 @@ export default function Moreinfo(){
             
 
             }
+        }
+        if(!info){
+            return null
         }
     return(
         <>
@@ -45,7 +48,7 @@ export default function Moreinfo(){
             { checkpasswors &&(
             <div className="w-full">
                          <div className="bg-purple-500 w-full h-60 flex justify-between ">
-                            <img className="h-70 w-70 rounded-full  mt-25 border  border-purple-600 shadow-lg shadow-purple-600" src="/public/picture12.jpg" alt="" />
+                            <img className="h-70 w-70 rounded-full  mt-25 border  border-purple-600 shadow-lg shadow-purple-600" src={info.image} alt="" />
                             <h1 className="mt-30 p-6 text-8xl cursive bg-linear-60 from-purple-950 via-purple-700 to-purple-800 h-fit w-fit text-transparent bg-clip-text">{info.name}</h1>
                     </div>
                         <div className="w-full flex flex-col gap-6 mt-5 items-baseline-last p-3 border border-purple-400 ">
